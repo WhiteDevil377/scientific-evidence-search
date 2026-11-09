@@ -1,0 +1,66 @@
+{
+  "corpus_documents": 5183,
+  "validation_queries": 809,
+  "test_queries": 300,
+  "selected_method": "hybrid_rrf",
+  "selection_metric": "validation nDCG@10; BEIR train queries used only for method selection",
+  "methods": {
+    "validation": {
+      "bm25": {
+        "ndcg_at_10": 0.6682727581014027,
+        "recall_at_10": 0.7908735063864853,
+        "mrr_at_10": 0.6357319441991878
+      },
+      "dense_minilm": {
+        "ndcg_at_10": 0.6602002541701137,
+        "recall_at_10": 0.7855583024309848,
+        "mrr_at_10": 0.6261301430337276
+      },
+      "hybrid_rrf": {
+        "ndcg_at_10": 0.6967682926744525,
+        "recall_at_10": 0.8198599093531108,
+        "mrr_at_10": 0.6636127298055604
+      }
+    },
+    "test": {
+      "bm25": {
+        "ndcg_at_10": 0.6634477520519497,
+        "recall_at_10": 0.7876111111111112,
+        "mrr_at_10": 0.6308915343915344
+      },
+      "dense_minilm": {
+        "ndcg_at_10": 0.6450816521455776,
+        "recall_at_10": 0.7833333333333333,
+        "mrr_at_10": 0.6047248677248678
+      },
+      "hybrid_rrf": {
+        "ndcg_at_10": 0.680226006563042,
+        "recall_at_10": 0.813888888888889,
+        "mrr_at_10": 0.6415211640211641
+      }
+    }
+  },
+  "model": {
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  },
+  "encoder_dimension": 384,
+  "max_wordpieces": 256,
+  "truncated_documents": 3681,
+  "dataset_sha256": "536e14446a0ba56ed1398ab1055f39fe852686ecad24a6306c80c490fa8e0165",
+  "local_sequential_search": {
+    "queries": 50,
+    "median_ms": 4.60141699295491,
+    "p95_ms": 6.449716311180963,
+    "includes": "encoding, lexical/dense scoring, fusion; excludes loading/network"
+  },
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "onnxruntime": "1.31.1",
+    "tokenizers": "0.23.3",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.8.0"
+  }
+}
