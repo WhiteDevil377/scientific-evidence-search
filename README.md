@@ -101,5 +101,3 @@ Useful extensions include cross-encoder reranking, abstract chunking, query-leve
 - [MiniLM model card and pooling instructions](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
 
 BEIR identifies the dataset license as [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Data and derived index artifacts retain that attribution and license. MiniLM model weights are identified as Apache 2.0 by their model card and are downloaded from the credited, pinned revision. Third-party libraries retain their respective licenses.
-
-This prototype was developed with AI assistance. The pretrained encoder, public data, and established ranking algorithms are credited above; no new model training or novel retrieval algorithm is claimed.
